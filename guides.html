@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body class="sub_page">
+
+    <!-- header section starts -->
+    <div class="header_area">
+        <header class="header_section">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="#">
+                            <h1>Toronto City Guide</h1>
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-link"><a href="index.html" class="active">Home</a></li>
+                        <li class="nav-link"><a href="guides.html" class="active">Guides</a></li>
+
+                    </ul>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- header section ends -->
+    <section class="guides_section">
+        <div class="guide-container">
+            <main>
+                <section class="tour-fares">
+                    <h1>Tour Fares</h1>
+                    <article class="tour-package">
+                    <h3>City Highlights</h3>
+                    <p>Discover Toronto's most iconic sights including the CN Tower, Royal Ontario Museum, and the Distillery District.</p>
+                    <p class="price">Price: $50 per person</p>
+                    </article>
+    
+                    <article class="tour-package">
+                    <h3>Lakeside Excursion</h3>
+                    <p>Enjoy a relaxing day by Lake Ontario with stops at beautiful beaches and the famous Toronto Harbourfront.</p>
+                    <p class="price">Price: $70 per person</p>
+                    </article>
+    
+                    <article class="tour-package">
+                    <h3>Cultural Experience</h3>
+                    <p>Immerse yourself in Toronto's cultural diversity with a tour around the city's historic neighborhoods and markets.</p>
+                    <p class="price">Price: $65 per person</p>
+                    </article>
+                    <article class="tour-package">
+                        <h3>City Highlights</h3>
+                        <p>Discover Toronto's most iconic sights including the CN Tower, Royal Ontario Museum, and the Distillery District.</p>
+                        <p class="price">Price: $50 per person</p>
+                        </article>
+        
+                        <article class="tour-package">
+                        <h3>Lakeside Excursion</h3>
+                        <p>Enjoy a relaxing day by Lake Ontario with stops at beautiful beaches and the famous Toronto Harbourfront.</p>
+                        <p class="price">Price: $70 per person</p>
+                        </article>
+        
+                        <article class="tour-package">
+                        <h3>Cultural Experience</h3>
+                        <p>Immerse yourself in Toronto's cultural diversity with a tour around the city's historic neighborhoods and markets.</p>
+                        <p class="price">Price: $65 per person</p>
+                        </article>
+                </section>
+            </main>
+            <aside class="sidebar">
+                <h2>Quick Info</h2>
+                <ul>
+                  <li><strong>Tour Hours:</strong> 9am - 5pm</li>
+                  <li><strong>Group Discounts:</strong> Available</li>
+                  <li><strong>Special Offers:</strong> Check back often</li>
+                </ul>
+                <h2>Contact Us</h2>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@torontotours.com</p>
+              </aside>
+              </div>
+    </section>
+
+    <section class="top-footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="logo">
+                    <a href="#">
+                        <h1>Toronto City Guide</h1>
+                    </a>
+                </div>
+                <p>
+                  Welcome to Toronto City Guide! Your ultimate resource for exploring the vibrant city of Toronto.
+                </p>
+
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f fa-lg grow"></i>
+                    <i class="fa-brands fa-instagram fa-lg grow"></i>
+                    <i class="fa-brands fa-twitter fa-lg grow"></i>
+                    <i class="fa-brands fa-youtube fa-lg grow"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script>
+        const nav = document.querySelector('nav');
+        const navMenu = document.querySelector(".nav-menu");
+        const hamburger = document.querySelector(".hamburger");
+        const navLink = document.querySelectorAll("li");
+
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body class="sub_page">
+
+    <!-- header section starts -->
+    <div class="header_area">
+        <header class="header_section">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="#">
+                            <h1>Toronto City Guide</h1>
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-link"><a href="index.html" class="active">Home</a></li>
+                        <li class="nav-link"><a href="guides.html" class="active">Guides</a></li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- header section ends -->
+
+    <section class="about-section">
+        <div class="container">
+            <div class="inner-column">
+                <div class="sec-title">
+                    <span class="section-heading">Toronto City Guide</span>
+                    <h2 style="color: red;padding: 10px;">Welcome to Toronto City Guide! Your ultimate resource for exploring the vibrant city of Toronto.</h2>
+                </div>
+            </div>
+            <div class="container-row">
+                <div class="container-column">
+                    <div class="detail-box">
+                      <h1>CN Tower</h1>
+                        <p>
+                          Standing tall and proud amidst the Toronto skyline, the CN Tower is more than just a towering structure; it's an architectural marvel, an engineering feat, and a symbol of Canadian pride. In this blog post, we'll take a closer look at the CN Tower, exploring its history, design, and the unforgettable experiences it offers to visitors from around the world.
+                          <br>
+                          Standing tall and proud amidst the Toronto skyline, the CN Tower is more than just a towering structure; it's an architectural marvel, an engineering feat, and a symbol of Canadian pride. In this blog post, we'll take a closer look at the CN Tower, exploring its history, design, and the unforgettable experiences it offers to visitors from around the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-column">
+                    <img src="istockphoto-535849289-1024x1024.jpg" alt="CN tower">
+                </div>
+            </div> 
+            <div class="container2">
+              <div class="container-row">
+                <div class="container-column">
+                    <div class="detail-box">
+                      <h1> Niagra </h1>
+                        <p>
+                          Standing tall and proud amidst the Toronto skyline, the CN Tower is more than just a towering structure; it's an architectural marvel, an engineering feat, and a symbol of Canadian pride. In this blog post, we'll take a closer look at the CN Tower, exploring its history, design, and the unforgettable experiences it offers to visitors from around the world.
+                          <br>
+                          Standing tall and proud amidst the Toronto skyline, the CN Tower is more than just a towering structure; it's an architectural marvel, an engineering feat, and a symbol of Canadian pride. In this blog post, we'll take a closer look at the CN Tower, exploring its history, design, and the unforgettable experiences it offers to visitors from around the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-column">
+                    <img src="istockphoto-1346270784-1024x1024.jpg" alt="Niagra">
+                </div>
+            </div>  
+            </div>  
+            <div class="container2">
+              <div class="container-row">
+                <div class="container-column">
+                    <div class="detail-box">
+                      <h1> Toronto Islands</h1>
+                        <p>
+                          Standing tall and proud amidst the Toronto skyline, the CN Tower is more than just a towering structure; it's an architectural marvel, an engineering feat, and a symbol of Canadian pride. In this blog post, we'll take a closer look at the CN Tower, exploring its history, design, and the unforgettable experiences it offers to visitors from around the world.
+                          <br>
+                          Standing tall and proud amidst the Toronto skyline, the CN Tower is more than just a towering structure; it's an architectural marvel, an engineering feat, and a symbol of Canadian pride. In this blog post, we'll take a closer look at the CN Tower, exploring its history, design, and the unforgettable experiences it offers to visitors from around the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-column">
+                    <img src="istockphoto-1035278432-1024x1024.jpg" alt="Islands">
+                </div>
+            </div>  
+            </div>           
+
+        </div>
+    </section>
+
+    <!-- footer section starts -->
+
+    <section class="top-footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="logo">
+                    <a href="#">
+                        <h1>Toronto City Guide</h1>
+                    </a>
+                </div>
+                <p>
+                  Welcome to Toronto City Guide! Your ultimate resource for exploring the vibrant city of Toronto.
+                </p>
+
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f fa-lg grow"></i>
+                    <i class="fa-brands fa-instagram fa-lg grow"></i>
+                    <i class="fa-brands fa-twitter fa-lg grow"></i>
+                    <i class="fa-brands fa-youtube fa-lg grow"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const nav = document.querySelector('nav');
+        const navMenu = document.querySelector(".nav-menu");
+        const hamburger = document.querySelector(".hamburger");
+        const navLink = document.querySelectorAll("li");
+
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>
